@@ -1,0 +1,23 @@
+Deploy files via gitbash to GitHub
+Note 
+SSH Key creation
+ssh-key -t rsa
+ls
+cat h.pub
+copy key and paste it in github login ssh and gpg column
+
+git global configuration
+git config --global user.email "sharsha@kluniversity.in"
+git config --global user.name "sriharshaklu"
+
+
+steps
+mkdir program1
+cd program1
+git init
+git clone https://github.com/sriharshaklu/cdd1.git
+cd cdd1
+notepad deploy.txt
+git add .
+git commit -m "version 1"
+git push
